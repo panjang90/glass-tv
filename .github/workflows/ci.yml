@@ -44,7 +44,7 @@ jobs:
         run: |
           chmod +x gradlew
           ./gradlew --no-daemon testReleaseUnitTest assembleRelease
-                - name: Debug build too
+      - name: Debug build too
         if: always()
         working-directory: launcher
         run: ./gradlew --no-daemon assembleDebug
